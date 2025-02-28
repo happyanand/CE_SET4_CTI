@@ -1,0 +1,1715 @@
+
+<!DOCTYPE html>
+<html>
+
+
+<head>
+	<meta charset='utf-8' /> 
+	<meta name='description' content='' />
+	<meta name='robots' content='noodp, noydir' />
+	<meta name='viewport' content='width=device-width, initial-scale=1' />
+	<meta id="timeStampFormat" name="timeStampFormat" content='EEEE, MMMM dd, yyyy, hh:mm a '('zzz')''/>
+	
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet' type='text/css' />
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+		<link href='https://cdn.rawgit.com/anshooarora/extentreports-java/b4a58fcfd1e137bd9287244035a7c80d3d73b3af/dist/css/extent.css' type='text/css' rel='stylesheet' />
+	
+	<title>CTI_Regression_Report_02272025.html</title>
+
+	<style type='text/css'>
+	</style>
+</head>
+
+	<body class='extent dark default hide-overflow '>
+		<div id='theme-selector' alt='Click to toggle theme. To enable by default, use theme configuration.' title='Click to toggle theme. To enable by default, use theme configuration.'>
+			<span><i class='material-icons'>desktop_windows</i></span>
+		</div>
+
+<nav>
+	<div class="nav-wrapper">
+		<a href="#!" class="brand-logo blue darken-3">Extent</a>
+
+		<!-- slideout menu -->
+		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
+			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
+						<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></i></a></li>
+		</ul>
+
+		<!-- report name -->
+		<span class='report-name'>CTI_Regression_Report_02272025.html</span>
+		
+		<!-- report headline -->
+		<span class='report-headline'></span>
+
+		<!-- nav-right -->
+		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
+			<li>
+                <a href='#!'>
+                    <span class='label suite-start-time blue darken-3'>Thursday, February 27, 2025, 09:36 AM (IST)</span>
+				</a>
+			</li>
+			<li>
+                <a href='#!'>
+                    <span class='label blue darken-3'>3.1.5</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+</nav>
+
+		<!-- container -->
+		<div class='container'>
+
+<div id='test-view' class='view'>
+				
+	<section id='controls'>
+		<div class='controls grey lighten-4'>
+			<!-- test toggle -->
+			<div class='chip transparent'>
+				<a class='dropdown-button tests-toggle' data-activates='tests-toggle' data-constrainwidth='true' data-beloworigin='true' data-hover='true' href='#'>
+					<i class='material-icons'>warning</i> Status
+				</a>
+				<ul id='tests-toggle' class='dropdown-content'>
+											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+						<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
+					<li class='divider'></li>
+					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
+				</ul>
+			</div>
+			<!-- test toggle -->
+
+			<!-- category toggle -->
+			<!-- category toggle -->
+
+			<!-- clear filters -->
+			<div class='chip transparent hide'>
+				<a class='' id='clear-filters' alt='Clear Filters' title='Clear Filters'>
+					<i class='material-icons'>close</i> Clear
+				</a>
+			</div>
+			<!-- clear filters -->
+
+			<!-- enable dashboard -->
+			<div id='toggle-test-view-charts' class='chip transparent'>
+				<a class='pink-text' id='enable-dashboard' alt='Enable Dashboard' title='Enable Dashboard'>
+					<i class='material-icons'>track_changes</i> Dashboard
+				</a>
+			</div>
+			<!-- enable dashboard -->
+
+			<!-- search -->
+			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
+				<a href="#" class='search-div'>
+					<i class='material-icons'>search</i> Search
+				</a>
+
+				<div class='input-field left hide'>
+					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+				</div>
+				
+			</div>
+			<!-- search -->
+		</div>
+	</section>
+
+
+<div id='test-view-charts' class='subview-full'>
+	<div id='charts-row' class='row nm-v nm-h'>
+		<div class='col s12 m6 l6 np-h'>
+			<div class='card-panel nm-v'>
+				<div class='left panel-name'>Tests</div>
+				<div class='chart-box'>
+					<canvas id='parent-analysis' width='100' height='80'></canvas>
+				</div>
+				<div class='block text-small'>
+					<span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> test(s) passed</span>
+				</div>
+				<div class='block text-small'>
+					<span class='strong tooltipped' data-position='top' data-tooltip='100%'>5</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+				</div>
+			</div>
+		</div>
+		
+		<div class='col s12 m6 l6 np-h'>
+			<div class='card-panel nm-v'>
+				<div class='left panel-name'>Steps</div>
+				<div class='chart-box'>
+					<canvas id='child-analysis' width='100' height='80'></canvas>
+				</div>
+				<div class='block text-small'>
+					<span class='tooltipped' data-position='top' data-tooltip='96.047%'><span class='strong'>243</span> step(s) passed</span>
+				</div>
+				<div class='block text-small'>
+					<span class='strong tooltipped' data-position='top' data-tooltip='3.953%'>10</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+				</div>
+			</div>
+		</div>
+		
+	</div>
+</div>
+
+	<div class='subview-left left'>
+		
+		<div class='view-summary'>
+			<h5>Tests</h5>
+			<ul id='test-collection' class='test-collection'>
+				
+				
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='1'>
+					<div class='test-heading'>
+						<span class='test-name'>TC_CTI_Conference_Online_Admin_CallLogs</span>
+						<span class='test-time'>Thursday, February 27, 2025, 09:36 AM (IST)</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Thursday, February 27, 2025, 09:36 AM (IST)</span>
+	<span class='label end-time'>Thursday, February 27, 2025, 09:42 AM (IST)</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 5m 26s+623ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:36:34 AM</td>
+					<td class='step-details'>Logged in Environment: UAT</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:36:41 AM</td>
+					<td class='step-details'>Launched brower is : Chrome</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:37:01 AM</td>
+					<td class='step-details'>Title is displayed : Benefitalign :: MME</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:37:13 AM</td>
+					<td class='step-details'>Application Login Benefitalign :: MME</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:37:14 AM</td>
+					<td class='step-details'>CheckUserLogin element not found! So you currently Dont have an active session on another device, hence Login is successful</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:37:31 AM</td>
+					<td class='step-details'>System able to found the element :By.xpath: //u[@title='Voice Number']</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:37:37 AM</td>
+					<td class='step-details'>New Tab has been Opened</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:37:49 AM</td>
+					<td class='step-details'>Clicked on Customer Engage Username field</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:37:51 AM</td>
+					<td class='step-details'>Entered the Customer Engage Username</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:37:53 AM</td>
+					<td class='step-details'>Clicked on Customer Engage password field</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:37:55 AM</td>
+					<td class='step-details'>Entered the Customer Engage Password</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:38:02 AM</td>
+					<td class='step-details'>Logged into the Receiver Side</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:38:03 AM</td>
+					<td class='step-details'>CheckUserLogin element not found! So you currently Dont have an active session on another device, hence Login is successful</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:39:41 AM</td>
+					<td class='step-details'>System able to found the element :By.xpath: //u[@title='Voice Number']</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:39:41 AM</td>
+					<td class='step-details'>System able to found the element :By.xpath: //*[@class='profile-name drag-not-allowed ng-binding']</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:39:48 AM</td>
+					<td class='step-details'>New Window has been opened</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:40:07 AM</td>
+					<td class='step-details'>Clicked on Customer Engage Username field</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:40:08 AM</td>
+					<td class='step-details'>Entered the Customer Engage Username</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:40:10 AM</td>
+					<td class='step-details'>Clicked on Customer Engage password field</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:40:12 AM</td>
+					<td class='step-details'>Entered the Customer Engage Password</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:40:13 AM</td>
+					<td class='step-details'>Customer Engage Application Sign-In Done</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:40:28 AM</td>
+					<td class='step-details'>Applicantion login successful</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:40:43 AM</td>
+					<td class='step-details'>CheckUserLogin element not found! So you currently Dont have an active session on another device, hence Login is successful</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:41:22 AM</td>
+					<td class='step-details'>System able to found the element :By.xpath: //u[@title='Voice Number']</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:41:26 AM</td>
+					<td class='step-details'>Input field has been clicked</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:41:27 AM</td>
+					<td class='step-details'>Number has been in input field(607) 524-9347</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:41:29 AM</td>
+					<td class='step-details'>Call button has been clicked</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:41:34 AM</td>
+					<td class='step-details'>System not able to found the element :By.xpath: //*[text()='Unable to connect the call. Please try again']</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:41:34 AM</td>
+					<td class='step-details'>Successfully System able to found the element :By.xpath: //*[contains(@ng-class,'{disabledMute')]</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:41:34 AM</td>
+					<td class='step-details'>Successfully user able to See 'CallMute Icon'</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:41:37 AM</td>
+					<td class='step-details'>Successfully user Clicked on 'CallMute Icon'</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:41:37 AM</td>
+					<td class='step-details'>System able to found the element :By.xpath: //u[@title='Voice Number']</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:41:37 AM</td>
+					<td class='step-details'>Tab Switched from parent to child</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:41:37 AM</td>
+					<td class='step-details'>Assertion has been done</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:41:44 AM</td>
+					<td class='step-details'>Start_TC_CTI_Conference_Online_Admin_CallLogs</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:41:56 AM</td>
+					<td class='step-details'>Tab Switched from child to parent</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>9:42:01 AM</td>
+					<td class='step-details'>expected [(256) 634-7502] but found []<img data-featherlight='D:\Backup_Folder\Git\ce_set4_regression_cti\ScreenShots\Login_TC_CTI_Conference_Online_Admin_CallLogs_02272025_094200.png' width='10%' src='D:\Backup_Folder\Git\ce_set4_regression_cti\ScreenShots\Login_TC_CTI_Conference_Online_Admin_CallLogs_02272025_094200.png' data-src='D:\Backup_Folder\Git\ce_set4_regression_cti\ScreenShots\Login_TC_CTI_Conference_Online_Admin_CallLogs_02272025_094200.png'></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>9:42:01 AM</td>
+					<td class='step-details'>Test Failed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='2'>
+					<div class='test-heading'>
+						<span class='test-name'>TC_CTI_Conference_BeRight_Back_Admin_CallLogs_CTI_Logs</span>
+						<span class='test-time'>Thursday, February 27, 2025, 09:42 AM (IST)</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Thursday, February 27, 2025, 09:42 AM (IST)</span>
+	<span class='label end-time'>Thursday, February 27, 2025, 09:49 AM (IST)</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 7m 21s+108ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:42:05 AM</td>
+					<td class='step-details'>Logged in Environment: UAT</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:42:08 AM</td>
+					<td class='step-details'>Launched brower is : Chrome</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:42:27 AM</td>
+					<td class='step-details'>Title is displayed : Benefitalign :: MME</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:42:39 AM</td>
+					<td class='step-details'>Application Login Benefitalign :: MME</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:42:43 AM</td>
+					<td class='step-details'>You currently have an active session on another device hence Deactivated the other session!</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:42:58 AM</td>
+					<td class='step-details'>System able to found the element :By.xpath: //u[@title='Voice Number']</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:43:04 AM</td>
+					<td class='step-details'>New Tab has been Opened</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:43:32 AM</td>
+					<td class='step-details'>Clicked on Customer Engage Username field</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:43:34 AM</td>
+					<td class='step-details'>Entered the Customer Engage Username</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:43:36 AM</td>
+					<td class='step-details'>Clicked on Customer Engage password field</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:43:38 AM</td>
+					<td class='step-details'>Entered the Customer Engage Password</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:43:45 AM</td>
+					<td class='step-details'>Logged into the Receiver Side</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:43:49 AM</td>
+					<td class='step-details'>You currently have an active session on another device hence Deactivated the other session!</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:44:16 AM</td>
+					<td class='step-details'>System able to found the element :By.xpath: //u[@title='Voice Number']</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:44:22 AM</td>
+					<td class='step-details'>New Window has been opened</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:44:45 AM</td>
+					<td class='step-details'>Clicked on Customer Engage Username field</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:44:47 AM</td>
+					<td class='step-details'>Entered the Customer Engage Username</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:44:48 AM</td>
+					<td class='step-details'>Clicked on Customer Engage password field</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:44:50 AM</td>
+					<td class='step-details'>Entered the Customer Engage Password</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:44:52 AM</td>
+					<td class='step-details'>Customer Engage Application Sign-In Done</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:44:57 AM</td>
+					<td class='step-details'>You currently have an active session on another device hence Deactivated the other session!</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:45:13 AM</td>
+					<td class='step-details'>CheckUserLogin element not found! So you currently Dont have an active session on another device, hence Login is successful</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:45:42 AM</td>
+					<td class='step-details'>System able to found the element :By.xpath: //u[@title='Voice Number']</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:45:42 AM</td>
+					<td class='step-details'>Tab Switched from child to parent</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:45:47 AM</td>
+					<td class='step-details'>Clicked on Admin tile</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:46:32 AM</td>
+					<td class='step-details'>Edit status popup is present</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:46:45 AM</td>
+					<td class='step-details'>Clicked on save custom status</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:47:04 AM</td>
+					<td class='step-details'>Clicked on the Offline Customset Buttons</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:47:04 AM</td>
+					<td class='step-details'>Tab Switched from parent to child</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:47:07 AM</td>
+					<td class='step-details'>Input field has been clicked</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:47:09 AM</td>
+					<td class='step-details'>Number has been in input field(607) 524-9347</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:47:11 AM</td>
+					<td class='step-details'>Call button has been clicked</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:47:16 AM</td>
+					<td class='step-details'>System not able to found the element :By.xpath: //*[text()='Unable to connect the call. Please try again']</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:47:16 AM</td>
+					<td class='step-details'>Successfully System able to found the element :By.xpath: //*[contains(@ng-class,'{disabledMute')]</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:47:16 AM</td>
+					<td class='step-details'>Successfully user able to See 'CallMute Icon'</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:47:19 AM</td>
+					<td class='step-details'>Successfully user Clicked on 'CallMute Icon'</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:47:19 AM</td>
+					<td class='step-details'>System able to found the element :By.xpath: //u[@title='Voice Number']</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:47:19 AM</td>
+					<td class='step-details'>Tab Switched from parent to child</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:47:19 AM</td>
+					<td class='step-details'>Assertion has been done</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:47:25 AM</td>
+					<td class='step-details'>Start_TC_CTI_Conference_BeRight_Back_Admin_CallLogs</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>9:49:26 AM</td>
+					<td class='step-details'>Expected condition failed: waiting for presence of element located by: By.xpath: //*[@id="voice-call-window-draggable"]/div[15]/div[1]/div[2]/div[5]/a[5]/i (tried for 120 second(s) with 500 milliseconds interval)<img data-featherlight='D:\Backup_Folder\Git\ce_set4_regression_cti\ScreenShots\Login_TC_CTI_Conference_BeRight_Back_Admin_CallLogs_CTI_Logs_02272025_094926.png' width='10%' src='D:\Backup_Folder\Git\ce_set4_regression_cti\ScreenShots\Login_TC_CTI_Conference_BeRight_Back_Admin_CallLogs_CTI_Logs_02272025_094926.png' data-src='D:\Backup_Folder\Git\ce_set4_regression_cti\ScreenShots\Login_TC_CTI_Conference_BeRight_Back_Admin_CallLogs_CTI_Logs_02272025_094926.png'></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>9:49:26 AM</td>
+					<td class='step-details'>Test Failed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='3'>
+					<div class='test-heading'>
+						<span class='test-name'>TC_CTI_Conference_Custome_Admin_CallLogs</span>
+						<span class='test-time'>Thursday, February 27, 2025, 09:49 AM (IST)</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Thursday, February 27, 2025, 09:49 AM (IST)</span>
+	<span class='label end-time'>Thursday, February 27, 2025, 10:00 AM (IST)</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 10m 34s+988ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:49:28 AM</td>
+					<td class='step-details'>Logged in Environment: UAT</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:49:30 AM</td>
+					<td class='step-details'>Launched brower is : Chrome</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:49:50 AM</td>
+					<td class='step-details'>Title is displayed : Benefitalign :: MME</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:50:03 AM</td>
+					<td class='step-details'>Application Login Benefitalign :: MME</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:50:07 AM</td>
+					<td class='step-details'>You currently have an active session on another device hence Deactivated the other session!</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:50:22 AM</td>
+					<td class='step-details'>System able to found the element :By.xpath: //u[@title='Voice Number']</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:51:01 AM</td>
+					<td class='step-details'>Clicked on Admin tile</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:51:37 AM</td>
+					<td class='step-details'>Edit status popup is present</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:51:49 AM</td>
+					<td class='step-details'>Clicked on save custom status</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:52:08 AM</td>
+					<td class='step-details'>Clicked on the Offline Customset Buttons</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:52:14 AM</td>
+					<td class='step-details'>New Tab has been Opened</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:52:28 AM</td>
+					<td class='step-details'>Clicked on Customer Engage Username field</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:52:30 AM</td>
+					<td class='step-details'>Entered the Customer Engage Username</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:52:31 AM</td>
+					<td class='step-details'>Clicked on Customer Engage password field</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:52:33 AM</td>
+					<td class='step-details'>Entered the Customer Engage Password</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:52:41 AM</td>
+					<td class='step-details'>Logged into the Receiver Side</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:52:44 AM</td>
+					<td class='step-details'>You currently have an active session on another device hence Deactivated the other session!</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:53:08 AM</td>
+					<td class='step-details'>System able to found the element :By.xpath: //u[@title='Voice Number']</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:53:08 AM</td>
+					<td class='step-details'>System able to found the element :By.xpath: //*[@class='profile-name drag-not-allowed ng-binding']</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:53:14 AM</td>
+					<td class='step-details'>New Window has been opened</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:53:34 AM</td>
+					<td class='step-details'>Clicked on Customer Engage Username field</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:53:36 AM</td>
+					<td class='step-details'>Entered the Customer Engage Username</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:53:38 AM</td>
+					<td class='step-details'>Clicked on Customer Engage password field</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:53:39 AM</td>
+					<td class='step-details'>Entered the Customer Engage Password</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:53:41 AM</td>
+					<td class='step-details'>Customer Engage Application Sign-In Done</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:53:47 AM</td>
+					<td class='step-details'>You currently have an active session on another device hence Deactivated the other session!</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:54:02 AM</td>
+					<td class='step-details'>CheckUserLogin element not found! So you currently Dont have an active session on another device, hence Login is successful</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:54:30 AM</td>
+					<td class='step-details'>System able to found the element :By.xpath: //u[@title='Voice Number']</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:54:33 AM</td>
+					<td class='step-details'>Input field has been clicked</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:54:35 AM</td>
+					<td class='step-details'>Number has been in input field(607) 524-9347</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:54:37 AM</td>
+					<td class='step-details'>Call button has been clicked</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:54:42 AM</td>
+					<td class='step-details'>System not able to found the element :By.xpath: //*[text()='Unable to connect the call. Please try again']</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:54:42 AM</td>
+					<td class='step-details'>Successfully System able to found the element :By.xpath: //*[contains(@ng-class,'{disabledMute')]</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:54:42 AM</td>
+					<td class='step-details'>Successfully user able to See 'CallMute Icon'</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:54:44 AM</td>
+					<td class='step-details'>Successfully user Clicked on 'CallMute Icon'</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:54:45 AM</td>
+					<td class='step-details'>System able to found the element :By.xpath: //u[@title='Voice Number']</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:54:45 AM</td>
+					<td class='step-details'>Tab Switched from parent to child</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:54:45 AM</td>
+					<td class='step-details'>Assertion has been done</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:54:52 AM</td>
+					<td class='step-details'>Start_TC_CTI_Conference_BeRight_Back_Admin_CallLogs</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:55:05 AM</td>
+					<td class='step-details'>Tab Switched from child to parent</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:55:10 AM</td>
+					<td class='step-details'>Successfully System able to found the element :By.xpath: //div[@class='col-xs-11 col-sm-3 alert alert-pastel-info animated fadeInRight']</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:55:10 AM</td>
+					<td class='step-details'>Successfully user able to See the 'Missed sms Popup'</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:55:10 AM</td>
+					<td class='step-details'>Tab Switched from parent to child</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:55:11 AM</td>
+					<td class='step-details'>Tab Switched from child to parent</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:55:13 AM</td>
+					<td class='step-details'>Successfully System able to found the element :By.xpath: //*[@href='/#/home']</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:55:13 AM</td>
+					<td class='step-details'>Successfully user able to See 'Home Page'</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:55:18 AM</td>
+					<td class='step-details'>Successfully user Clicked on 'Home Page Button'</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:55:26 AM</td>
+					<td class='step-details'>Successfully System able to found the element :By.xpath: //*[@class='admin-box box animate-box fade-in']</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:55:26 AM</td>
+					<td class='step-details'>Successfully user able to See 'Admin module Icon'</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:55:27 AM</td>
+					<td class='step-details'>Successfully user Hover on 'Admin module Icon'</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:55:27 AM</td>
+					<td class='step-details'>Successfully System able to found the element :By.xpath: //*[contains(@ng-show,'Telephony Setup')]</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:55:27 AM</td>
+					<td class='step-details'>Successfully user able to See 'Telephony Setup'</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:55:29 AM</td>
+					<td class='step-details'>Successfully user Clicked on 'Telephony Setup'</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:55:52 AM</td>
+					<td class='step-details'>Successfully System able to found the element :By.id: viceCallLogsBtn</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:55:52 AM</td>
+					<td class='step-details'>Successfully user able to See 'CallSMSFAXLogsManagement Icon'</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:55:55 AM</td>
+					<td class='step-details'>Successfully user Clicked on 'CallSMSFAXLogsManagement Icon'</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:56:34 AM</td>
+					<td class='step-details'>System not able to found the element :By.xpath: //*[@class='metro inner_wrapper ng-scope page-loading'] | //*[@id='loading'][class='ng-scope']</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:56:34 AM</td>
+					<td class='step-details'>Successfully System able to found the element :By.xpath: //h5[contains(text(),'Call Type')]//parent::div</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:56:34 AM</td>
+					<td class='step-details'>Successfully user able to See 'CallTypeFilter Icon'</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:56:55 AM</td>
+					<td class='step-details'>Successfully user Clicked on 'CallTypeFilter Icon'</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:57:16 AM</td>
+					<td class='step-details'>Successfully System able to found the element :By.xpath: //*[@aria-label='Search your text'] | //*[@aria-label='Search Phone numbers']</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:57:16 AM</td>
+					<td class='step-details'>Successfully user able to See 'SearchBar Icon'</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:57:18 AM</td>
+					<td class='step-details'>Successfully user entered the 'SearchBar in Search field' (479) 324-2938</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:57:26 AM</td>
+					<td class='step-details'>Times match or are within the acceptable range.</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:57:26 AM</td>
+					<td class='step-details'>Successfully System able to found the element :By.xpath: (//*[@class='ui-grid-canvas']//*[contains(text(),'(479) 324-2938')])[1]</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:57:26 AM</td>
+					<td class='step-details'>Successfully user able to See the '(479) 324-2938'inside the web table</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:57:26 AM</td>
+					<td class='step-details'>Successfully System able to found the element :By.xpath: (//*[@class='ui-grid-canvas']//*[contains(text(),'(256) 634-7502')])[1]</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:57:26 AM</td>
+					<td class='step-details'>Successfully user able to See the '(256) 634-7502'inside the web table</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:57:27 AM</td>
+					<td class='step-details'>Successfully System able to found the element :By.xpath: (//*[@ng-click='grid.appScope.navigateToCallDetails(row.entity);'])[1]//a</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:57:27 AM</td>
+					<td class='step-details'>Successfully user able to See 'FirstRowFromTable ID'</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:57:29 AM</td>
+					<td class='step-details'>Successfully user Clicked on 'FirstRowFromTable ID'</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:57:43 AM</td>
+					<td class='step-details'>System able to found the element :By.xpath: (//*[@class='row basicInfoForm']//div//p[2])[1]</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:57:43 AM</td>
+					<td class='step-details'>Successfully user found the expected Value:- Expected (256) 634-7502 Actual (256) 634-7502</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:57:45 AM</td>
+					<td class='step-details'>System able to found the element :By.xpath: (//*[@class='row basicInfoForm']//div//p[2])[2]</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:57:45 AM</td>
+					<td class='step-details'>Successfully user found the expected Value:- Expected (607) 524-9347 Actual (607) 524-9347</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:57:47 AM</td>
+					<td class='step-details'>System able to found the element :By.xpath: (//*[@class='row basicInfoForm']//div//p[2])[3]</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:57:47 AM</td>
+					<td class='step-details'>Successfully user found the expected Value:- Expected Incoming Call Actual Incoming Call</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:57:49 AM</td>
+					<td class='step-details'>System able to found the element :By.xpath: (//*[@class='row basicInfoForm']//div//p[2])[4]</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:57:49 AM</td>
+					<td class='step-details'>Successfully user found the expected Value:- Expected Completed Actual Completed</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:57:51 AM</td>
+					<td class='step-details'>System able to found the element :By.xpath: (//*[@class='row basicInfoForm']//div//p[2])[5]</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:57:51 AM</td>
+					<td class='step-details'>Successfully user found the expected Value:- Expected 02/27/2025 Actual 02/27/2025</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:57:53 AM</td>
+					<td class='step-details'>System able to found the element :By.xpath: (//*[@class='row basicInfoForm']//div//p[2])[6]</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:57:56 AM</td>
+					<td class='step-details'>System able to found the element :By.xpath: (//*[@class='row basicInfoForm']//div//p[2])[7]</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:57:58 AM</td>
+					<td class='step-details'>System able to found the element :By.xpath: (//*[@class='row basicInfoForm']//div//p[2])[8]</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:58:00 AM</td>
+					<td class='step-details'>System able to found the element :By.xpath: (//*[@class='row basicInfoForm']//div//p[2])[9]</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:58:00 AM</td>
+					<td class='step-details'>Successfully user found the expected Value:- Expected Not DNC Number Actual Not DNC Number</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:58:02 AM</td>
+					<td class='step-details'>System able to found the element :By.xpath: (//*[@class='row basicInfoForm']//div//p[2])[10]</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:58:02 AM</td>
+					<td class='step-details'>Successfully user found the expected Value:- Expected CEUSERUAT ASIFALAM2 Actual CEUSERUAT ASIFALAM2</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:58:02 AM</td>
+					<td class='step-details'>End_TC_CTI_Conference_BeRight_Back_Admin_CallLogs</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:58:02 AM</td>
+					<td class='step-details'>*****************************************************************************</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:58:02 AM</td>
+					<td class='step-details'>Start_TC_CTI_Conference_BeRight_Back_CTI_CallLogs</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>10:00:03 AM</td>
+					<td class='step-details'>Expected condition failed: waiting for visibility of element located by By.xpath: //*[@class='nav-link AVAILABLE'] | //*[@class='nav-link BUSY'] | //*[@class='nav-link voice-user-away'] | //*[@class='nav-link Offline'] (tried for 120 second(s) with 500 milliseconds interval)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.127, chrome: {chromedriverVersion: 133.0.6943.141 (2a5d6da0d61..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53280}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53280/devtoo..., se:cdpVersion: 133.0.6943.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2c4c024305eac9fd5466f0233d2e3723<img data-featherlight='D:\Backup_Folder\Git\ce_set4_regression_cti\ScreenShots\Login_TC_CTI_Conference_Custome_Admin_CallLogs_02272025_100002.png' width='10%' src='D:\Backup_Folder\Git\ce_set4_regression_cti\ScreenShots\Login_TC_CTI_Conference_Custome_Admin_CallLogs_02272025_100002.png' data-src='D:\Backup_Folder\Git\ce_set4_regression_cti\ScreenShots\Login_TC_CTI_Conference_Custome_Admin_CallLogs_02272025_100002.png'></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>10:00:03 AM</td>
+					<td class='step-details'>Test Failed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='4'>
+					<div class='test-heading'>
+						<span class='test-name'>TC_CTI_Conference_Offline_Admin_CallLogs_CTI_Logs</span>
+						<span class='test-time'>Thursday, February 27, 2025, 10:00 AM (IST)</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Thursday, February 27, 2025, 10:00 AM (IST)</span>
+	<span class='label end-time'>Thursday, February 27, 2025, 10:04 AM (IST)</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 3m 58s+847ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>10:00:04 AM</td>
+					<td class='step-details'>Logged in Environment: UAT</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>10:00:08 AM</td>
+					<td class='step-details'>Launched brower is : Chrome</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>10:00:31 AM</td>
+					<td class='step-details'>Title is displayed : Benefitalign :: MME</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>10:00:41 AM</td>
+					<td class='step-details'>Application Login Benefitalign :: MME</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>10:00:45 AM</td>
+					<td class='step-details'>You currently have an active session on another device hence Deactivated the other session!</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>10:01:00 AM</td>
+					<td class='step-details'>Start_TC_CTI_Inbound_Confrence_To_Agent_Offline_Activity_Status</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>10:01:01 AM</td>
+					<td class='step-details'>System able to found the element :By.xpath: //u[@title='Voice Number']</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>10:01:01 AM</td>
+					<td class='step-details'>System able to found the element :By.xpath: //*[@class='profile-name drag-not-allowed ng-binding']</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>10:01:08 AM</td>
+					<td class='step-details'>New Tab has been Opened</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>10:01:19 AM</td>
+					<td class='step-details'>Clicked on Customer Engage Username field</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>10:01:21 AM</td>
+					<td class='step-details'>Entered the Customer Engage Username:-CEUserUatAsifAlam2</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>10:01:22 AM</td>
+					<td class='step-details'>Clicked on Customer Engage password field</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>10:01:24 AM</td>
+					<td class='step-details'>Entered the Customer Engage Password:-P@ssword123!</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>10:01:30 AM</td>
+					<td class='step-details'>Logged into the Receiver Side</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>10:01:33 AM</td>
+					<td class='step-details'>You currently have an active session on another device hence Deactivated the other session!</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>10:01:59 AM</td>
+					<td class='step-details'>System able to found the element :By.xpath: //u[@title='Voice Number']</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>10:04:03 AM</td>
+					<td class='step-details'>Expected condition failed: waiting for presence of element located by: By.xpath: (//a[@class='glyphicon fa fa-fw fa-black-tie'])[1] (tried for 120 second(s) with 500 milliseconds interval)<img data-featherlight='D:\Backup_Folder\Git\ce_set4_regression_cti\ScreenShots\Login_TC_CTI_Conference_Offline_Admin_CallLogs_CTI_Logs_02272025_100403.png' width='10%' src='D:\Backup_Folder\Git\ce_set4_regression_cti\ScreenShots\Login_TC_CTI_Conference_Offline_Admin_CallLogs_CTI_Logs_02272025_100403.png' data-src='D:\Backup_Folder\Git\ce_set4_regression_cti\ScreenShots\Login_TC_CTI_Conference_Offline_Admin_CallLogs_CTI_Logs_02272025_100403.png'></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>10:04:03 AM</td>
+					<td class='step-details'>Test Failed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='5'>
+					<div class='test-heading'>
+						<span class='test-name'>TC_CTI_BF_RL_Conference_To_Agent_Online_Activity_Status_Admin_call_logs_CTI_call_logs</span>
+						<span class='test-time'>Thursday, February 27, 2025, 10:04 AM (IST)</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Thursday, February 27, 2025, 10:04 AM (IST)</span>
+	<span class='label end-time'>Thursday, February 27, 2025, 10:10 AM (IST)</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 6m 25s+433ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>10:04:05 AM</td>
+					<td class='step-details'>Logged in Environment: UAT</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>10:04:08 AM</td>
+					<td class='step-details'>Launched brower is : Chrome</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>10:04:25 AM</td>
+					<td class='step-details'>Title is displayed : Benefitalign :: MME</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>10:04:35 AM</td>
+					<td class='step-details'>Application Login Benefitalign :: MME</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>10:04:39 AM</td>
+					<td class='step-details'>You currently have an active session on another device hence Deactivated the other session!</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>10:04:54 AM</td>
+					<td class='step-details'>Start_TC_CTI_BF_RL_Confrence_To_Agent_Online_Activity_Status</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>10:06:37 AM</td>
+					<td class='step-details'>System able to found the element :By.xpath: //u[@title='Voice Number']</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>10:06:43 AM</td>
+					<td class='step-details'>New Tab has been Opened</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>10:07:07 AM</td>
+					<td class='step-details'>Clicked on Customer Engage Username field</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>10:07:09 AM</td>
+					<td class='step-details'>Entered the Customer Engage Username</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>10:07:10 AM</td>
+					<td class='step-details'>Clicked on Customer Engage password field</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>10:07:12 AM</td>
+					<td class='step-details'>Entered the Customer Engage Password</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>10:07:14 AM</td>
+					<td class='step-details'>Customer Engage Application Sign-In Done</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>10:07:19 AM</td>
+					<td class='step-details'>You currently have an active session on another device hence Deactivated the other session!</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>10:07:30 AM</td>
+					<td class='step-details'>CheckUserLogin element not found! So you currently Dont have an active session on another device, hence Login is successful</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>10:07:45 AM</td>
+					<td class='step-details'>System able to found the element :By.xpath: //u[@title='Voice Number']</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>10:07:51 AM</td>
+					<td class='step-details'>New Window has been opened</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>10:08:17 AM</td>
+					<td class='step-details'>Clicked on Broker Engage Username field</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>10:08:19 AM</td>
+					<td class='step-details'>Entered the Broker Engage Username</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>10:08:21 AM</td>
+					<td class='step-details'>Clicked on Broker Engage password field</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>10:08:23 AM</td>
+					<td class='step-details'>Entered the Broker Engage Password</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>10:08:28 AM</td>
+					<td class='step-details'>Logged into the Receiver Side</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>10:08:38 AM</td>
+					<td class='step-details'>CheckUserLogin element not found! So you currently Dont have an active session on another device, hence Login is successful</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>10:08:53 AM</td>
+					<td class='step-details'>System not able to found the element :By.xpath: //u[@title='Voice Number']</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>10:08:53 AM</td>
+					<td class='step-details'>Tab Switched from child to parent</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>10:08:53 AM</td>
+					<td class='step-details'>Successfully System able to found the element :By.xpath: //a[@class='fa fa-minus right-al']</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>10:08:53 AM</td>
+					<td class='step-details'>Successfully user able to See 'Minimize Icon'</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>10:08:56 AM</td>
+					<td class='step-details'>Successfully user Clicked on 'Minimize Icon'</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>10:08:59 AM</td>
+					<td class='step-details'>Successfully System able to found the element :By.xpath: //*[@class='admin-box box animate-box fade-in']</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>10:08:59 AM</td>
+					<td class='step-details'>Successfully user able to See 'Admin module Icon'</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>10:08:59 AM</td>
+					<td class='step-details'>Successfully user Hover on 'Admin module Icon'</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>10:08:59 AM</td>
+					<td class='step-details'>Successfully System able to found the element :By.xpath: //*[contains(@ng-show,'Telephony Setup')]</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>10:08:59 AM</td>
+					<td class='step-details'>Successfully user able to See 'Telephony Setup'</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>10:09:02 AM</td>
+					<td class='step-details'>Successfully user Clicked on 'Telephony Setup'</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>10:09:10 AM</td>
+					<td class='step-details'>Successfully System able to found the element :By.xpath: //*[contains(@ng-click,'admin/manage-account/callGroups')]</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>10:09:10 AM</td>
+					<td class='step-details'>Successfully user able to See 'Group Calls Tab'</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>10:09:12 AM</td>
+					<td class='step-details'>Successfully user Clicked on 'Group Calls Tab'</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>10:09:41 AM</td>
+					<td class='step-details'>Successfully System able to found the element :By.xpath: //a[@class='fa fa-minus right-al']</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>10:09:41 AM</td>
+					<td class='step-details'>Successfully user able to See 'Minimize Icon'</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>10:09:43 AM</td>
+					<td class='step-details'>Successfully user Clicked on 'Minimize Icon'</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>10:09:54 AM</td>
+					<td class='step-details'>Successfully System able to found the element :By.xpath: //*[@aria-label='Search your text'] | //*[@aria-label='Search Phone numbers']</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>10:09:54 AM</td>
+					<td class='step-details'>Successfully user able to See 'SearchBar Icon'</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>10:09:57 AM</td>
+					<td class='step-details'>Successfully user entered the 'SearchBar in Search field' Automation_BFRLConference</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>10:09:59 AM</td>
+					<td class='step-details'>System not able to found the element :By.xpath: //*[@class='metro inner_wrapper ng-scope page-loading'] | //*[@id='loading'][class='ng-scope']</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>10:09:59 AM</td>
+					<td class='step-details'>Successfully System able to found the element :By.xpath: (//*[@role='row'][@row-render-index='rowRenderIndex']//div//a)[1]</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>10:09:59 AM</td>
+					<td class='step-details'>System able to found the element :By.xpath: (//*[@role='row'][@row-render-index='rowRenderIndex']//div//a)[1]</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>10:09:59 AM</td>
+					<td class='step-details'>System not able to found the element :By.xpath: //*[@class='watermarkNoData ng-scope'][text()='No data available']</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>10:09:59 AM</td>
+					<td class='step-details'>Call group is already present</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>10:09:59 AM</td>
+					<td class='step-details'>System able to found the element :By.xpath: (//div[@class='ng-binding ng-scope'])[1]</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>10:09:59 AM</td>
+					<td class='step-details'>Tab Switched from parent to child</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>10:09:59 AM</td>
+					<td class='step-details'>Successfully System able to found the element :By.xpath: //*[contains(@ng-class,'CALL_GROUPS')]</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>10:09:59 AM</td>
+					<td class='step-details'>Successfully user able to See 'Call Group tab Button'</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>10:10:02 AM</td>
+					<td class='step-details'>Successfully user Clicked on'Call Group tab Button'</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>10:10:10 AM</td>
+					<td class='step-details'>Successfully System able to found the element :By.xpath: //*[text()='Automation_BFRLConference']//ancestor::tr//*[@class='glyphicon fa fa-toggle-on ng-scope']</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>10:10:10 AM</td>
+					<td class='step-details'>Successfully user able to See 'On Switch'</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>10:10:18 AM</td>
+					<td class='step-details'>Successfully System able to found the element :By.xpath: //*[@title='Minimize']</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>10:10:18 AM</td>
+					<td class='step-details'>Successfully user able to See 'minimize button'</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>10:10:20 AM</td>
+					<td class='step-details'>Successfully user Clicked on 'minimize button'</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>10:10:20 AM</td>
+					<td class='step-details'>Tab Switched from parent to child</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>10:10:29 AM</td>
+					<td class='step-details'>Input field has been clicked</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>10:10:30 AM</td>
+					<td class='step-details'>element not interactable
+  (Session info: chrome=133.0.6943.127)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [06ea639ac08176d9da1878ce91dd44ea, sendKeysToElement {id=f.74D3057082986A3BECB166D325ECDA0E.d.82953F76BDDBDCF330B6CCC8DD099010.e.63, value=[Ljava.lang.CharSequence;@30c716ce}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.127, chrome: {chromedriverVersion: 133.0.6943.141 (2a5d6da0d61..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53953}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53953/devtoo..., se:cdpVersion: 133.0.6943.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (06ea639ac08176d9da1878ce91dd44ea)] -> xpath: //input[@class='voice-call-input ng-pristine ng-untouched ng-valid ng-isolate-scope ng-empty']]
+Session ID: 06ea639ac08176d9da1878ce91dd44ea<img data-featherlight='D:\Backup_Folder\Git\ce_set4_regression_cti\ScreenShots\Login_TC_CTI_BF_RL_Conference_To_Agent_Online_Activity_Status_Admin_call_logs_CTI_call_logs_02272025_101030.png' width='10%' src='D:\Backup_Folder\Git\ce_set4_regression_cti\ScreenShots\Login_TC_CTI_BF_RL_Conference_To_Agent_Online_Activity_Status_Admin_call_logs_CTI_call_logs_02272025_101030.png' data-src='D:\Backup_Folder\Git\ce_set4_regression_cti\ScreenShots\Login_TC_CTI_BF_RL_Conference_To_Agent_Online_Activity_Status_Admin_call_logs_CTI_call_logs_02272025_101030.png'></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>10:10:30 AM</td>
+					<td class='step-details'>Test Failed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- subview left -->
+
+	<div class='subview-right left'>
+		<div class='view-summary'>
+			<h5 class='test-name'></h5>
+
+			<div id='step-filters' class="right">
+				<span class="blue-text" status="info" alt="info" title="info"><i class="material-icons">info_outline</i></span>
+				<span class="green-text" status="pass" alt="pass" title="pass"><i class="material-icons">check_circle</i></span>
+				<span class="red-text" status="fail" alt="fail" title="fail"><i class="material-icons">cancel</i></span>
+				<span class="red-text text-darken-4" status="fatal" alt="fatal" title="fatal"><i class="material-icons">cancel</i></span>
+				<span class="pink-text text-lighten-1" status="error" alt="error" title="error"><i class="material-icons">error</i></span>
+				<span class="orange-text" alt="warning" status="warning" title="warning"><i class="material-icons">warning</i></span>
+				<span class="teal-text" status="skip" alt="skip" title="skip"><i class="material-icons">redo</i></span>
+				<span status="clear" alt="Clear filters" title="Clear filters"><i class="material-icons">clear</i></span>
+			</div>
+		</div>
+	</div>
+	<!-- subview right -->
+
+</div>
+<!-- test view -->
+<!-- category view -->
+<!-- exception view -->
+<div id='dashboard-view' class='view hide'>
+	<div class='card-panel transparent np-v'>
+		<h5>Dashboard</h5>
+
+		<div class='row'>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Tests
+					<div class='panel-lead'>5</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Steps
+					<div class='panel-lead'>253</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Start
+					<div class='panel-lead'>Thursday, February 27, 2025, 09:36 AM (IST)</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+			 		End
+			 		<div class='panel-lead'>Thursday, February 27, 2025, 10:10 AM (IST)</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Time Taken
+					<div class='panel-lead'>0h 33m 56s+166ms</div>
+				</div>
+			</div>
+			<div class='col s4'>
+				<div class='card-panel dashboard-environment'>
+					<span class='right label cyan white-text'>Environment</span><p>&nbsp;</p>
+					
+					<table>
+						<tr>
+							<th>Name</th>
+							<th>Value</th>
+						</tr>
+							<tr>
+								<td>OS</td>
+								<td>Windows</td>
+							</tr>
+							<tr>
+								<td>AUT</td>
+								<td>QA</td>
+							</tr>
+							<tr>
+								<td>Author</td>
+								<td>Asif Alam</td>
+							</tr>
+							<tr>
+								<td>Author</td>
+								<td>Ravikiran</td>
+							</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- dashboard view -->
+<!-- testrunner-logs view -->
+		</div>
+		<!-- container -->
+
+		<script>
+			var statusGroup = {
+				passParent: 0,
+				failParent: 5,
+				fatalParent: 0,
+				errorParent: 0,
+				warningParent: 0,
+				skipParent: 0,
+				exceptionsParent: 5,
+				
+				passChild: 243,
+				failChild: 10,
+				fatalChild: 0,
+				errorChild: 0,
+				warningChild: 0,
+				skipChild: 0,
+				infoChild: 0,
+				exceptionsChild: 10,
+				
+				passGrandChild: 0,
+				failGrandChild: 0,
+				fatalGrandChild: 0,
+				errorGrandChild: 0,
+				warningGrandChild: 0,
+				skipGrandChild: 0,
+				infoGrandChild: 0,
+				exceptionsGrandChild: 0,
+			};
+		</script>
+		
+			<script src='https://cdn.rawgit.com/anshooarora/extentreports-java/fca20fb7653aade98810546ab96a2a4360e3e712/dist/js/extent.js' type='text/javascript'></script>
+		
+		
+ 		<script type='text/javascript'>
+ 		</script>
+	</body>
+	
+</html>

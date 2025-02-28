@@ -1,0 +1,70 @@
+[INFO ] 2025-02-28 10:22:34.522 [main] Log - *** Running test method TC_CTI_AdminSMS_Call_Fax_Tab_Validation_SMS_MMS_Inbound_Outbound...
+[INFO ] 2025-02-28 10:23:15.117 [main] Log - Login successful !
+[INFO ] 2025-02-28 10:28:33.157 [main] Log - *** Test Suite TC_CTI_AdminSMS_Call_Fax_Tab_Validation_SMS_MMS_Inbound_Outbound ending ***
+[INFO ] 2025-02-28 10:28:33.160 [main] Log - *** Running test method TC_CTI_SMS_MMS_Inbound_CTI_Logs_Status_SSE_notification_Status_Email_notifiation_Status...
+[INFO ] 2025-02-28 10:29:03.802 [main] Log - Login successful !
+[INFO ] 2025-02-28 10:32:49.414 [main] Log - *** Test Suite TC_CTI_SMS_MMS_Inbound_CTI_Logs_Status_SSE_notification_Status_Email_notifiation_Status ending ***
+[INFO ] 2025-02-28 10:32:49.416 [main] Log - *** Running test method TC_CTI_Voicemail_To_Agent...
+[INFO ] 2025-02-28 10:33:19.166 [main] Log - Login successful !
+[ERROR] 2025-02-28 10:38:16.112 [main] Log - Expected condition failed: waiting for presence of element located by: By.xpath: (//div[@role='gridcell'])[7] (tried for 120 second(s) with 500 milliseconds interval)
+[INFO ] 2025-02-28 10:38:16.261 [main] Log - *** Test Suite TC_CTI_Voicemail_To_Agent ending ***
+[INFO ] 2025-02-28 10:38:17.167 [main] Log - *** Running test method TC_CTI_AdminSMS_Call_Fax_Tab_Validation_Missed_call_to_Agent...
+[INFO ] 2025-02-28 10:38:45.446 [main] Log - Login successful !
+[INFO ] 2025-02-28 10:42:27.041 [main] Log - *** Test Suite TC_CTI_AdminSMS_Call_Fax_Tab_Validation_Missed_call_to_Agent ending ***
+[INFO ] 2025-02-28 10:42:27.042 [main] Log - *** Running test method TC_CE_010_CTI_Inbound_calls_forwarding_option...
+[INFO ] 2025-02-28 10:42:55.017 [main] Log - Login successful !
+[INFO ] 2025-02-28 10:46:25.520 [main] Log - *** Test Suite TC_CE_010_CTI_Inbound_calls_forwarding_option ending ***
+[INFO ] 2025-02-28 10:46:25.521 [main] Log - *** Running test method TC_CTI_CallDisposition_Validation_Mandatory_Fields...
+[INFO ] 2025-02-28 10:46:54.239 [main] Log - Login successful !
+[INFO ] 2025-02-28 10:53:08.361 [main] Log - *** Test Suite TC_CTI_CallDisposition_Validation_Mandatory_Fields ending ***
+[INFO ] 2025-02-28 10:53:08.364 [main] Log - *** Running test method TC_CTI_CallDisposition_Validation_Non_Mandatory_Fields...
+[INFO ] 2025-02-28 10:53:39.297 [main] Log - Login successful !
+[INFO ] 2025-02-28 10:58:37.800 [main] Log - *** Test Suite TC_CTI_CallDisposition_Validation_Non_Mandatory_Fields ending ***
+[INFO ] 2025-02-28 10:58:37.802 [main] Log - *** Running test method TC_CTI_CallDisposition_Validation_Disposition_Dropdown...
+[INFO ] 2025-02-28 10:59:07.000 [main] Log - Login successful !
+[INFO ] 2025-02-28 11:06:07.625 [main] Log - *** Test Suite TC_CTI_CallDisposition_Validation_Disposition_Dropdown ending ***
+[INFO ] 2025-02-28 11:06:07.627 [main] Log - *** Running test method TC_CTI_CallDisposition_Validation_Inbound_Call_Transfer...
+[INFO ] 2025-02-28 11:06:39.410 [main] Log - Login successful !
+[INFO ] 2025-02-28 11:13:17.775 [main] Log - *** Test Suite TC_CTI_CallDisposition_Validation_Inbound_Call_Transfer ending ***
+[INFO ] 2025-02-28 11:13:17.778 [main] Log - *** Running test method TC_CTI_CallDisposition_Validation_Outbound_Call_Transfer...
+[INFO ] 2025-02-28 11:13:46.560 [main] Log - Login successful !
+[INFO ] 2025-02-28 11:21:11.369 [main] Log - *** Test Suite TC_CTI_CallDisposition_Validation_Outbound_Call_Transfer ending ***
+[INFO ] 2025-02-28 11:21:11.375 [main] Log - *** Running test method TC_CTI_CallScript_Assign_to_Agent...
+[INFO ] 2025-02-28 11:21:44.814 [main] Log - Login successful !
+[ERROR] 2025-02-28 11:30:21.330 [main] Log - Expected condition failed: waiting for presence of element located by: By.xpath: //i[@title='Deactivate Script'] (tried for 120 second(s) with 500 milliseconds interval)
+[INFO ] 2025-02-28 11:30:21.616 [main] Log - *** Test Suite TC_CTI_CallScript_Assign_to_Agent ending ***
+[INFO ] 2025-02-28 11:30:23.707 [main] Log - *** Running test method TC_CTI_Conference_Online_Admin_CallLogs...
+[INFO ] 2025-02-28 11:30:54.819 [main] Log - Login successful !
+[INFO ] 2025-02-28 11:38:38.068 [main] Log - *** Test Suite TC_CTI_Conference_Online_Admin_CallLogs ending ***
+[INFO ] 2025-02-28 11:38:38.068 [main] Log - *** Running test method TC_CTI_Conference_BeRight_Back_Admin_CallLogs_CTI_Logs...
+[INFO ] 2025-02-28 11:39:11.518 [main] Log - Login successful !
+[INFO ] 2025-02-28 11:47:37.788 [main] Log - *** Test Suite TC_CTI_Conference_BeRight_Back_Admin_CallLogs_CTI_Logs ending ***
+[INFO ] 2025-02-28 11:47:37.791 [main] Log - *** Running test method TC_CTI_Conference_Custome_Admin_CallLogs...
+[INFO ] 2025-02-28 11:48:13.351 [main] Log - Login successful !
+[INFO ] 2025-02-28 11:56:38.670 [main] Log - *** Test Suite TC_CTI_Conference_Custome_Admin_CallLogs ending ***
+[INFO ] 2025-02-28 11:56:38.674 [main] Log - *** Running test method TC_CTI_Conference_Offline_Admin_CallLogs_CTI_Logs...
+[INFO ] 2025-02-28 11:57:10.911 [main] Log - Login successful !
+[INFO ] 2025-02-28 12:05:28.722 [main] Log - *** Test Suite TC_CTI_Conference_Offline_Admin_CallLogs_CTI_Logs ending ***
+[INFO ] 2025-02-28 12:05:28.724 [main] Log - *** Running test method TC_CTI_BF_RL_Conference_To_Agent_Online_Activity_Status_Admin_call_logs_CTI_call_logs...
+[INFO ] 2025-02-28 12:06:05.016 [main] Log - Login successful !
+[INFO ] 2025-02-28 12:16:13.547 [main] Log - *** Test Suite TC_CTI_BF_RL_Conference_To_Agent_Online_Activity_Status_Admin_call_logs_CTI_call_logs ending ***
+[INFO ] 2025-02-28 12:16:13.550 [main] Log - *** Running test method TC_CTI_BF_RG_Conference_To_Agent_Online_Activity_Status_Admin_call_logs_CTI_call_logs...
+[INFO ] 2025-02-28 12:16:46.016 [main] Log - Login successful !
+[INFO ] 2025-02-28 12:25:59.422 [main] Log - *** Test Suite TC_CTI_BF_RG_Conference_To_Agent_Online_Activity_Status_Admin_call_logs_CTI_call_logs ending ***
+[INFO ] 2025-02-28 12:25:59.424 [main] Log - *** Running test method TC_CTI_Outbound_Conference_Offline_Admin_CallLogs_CTI_Logs...
+[INFO ] 2025-02-28 12:26:29.073 [main] Log - Login successful !
+[ERROR] 2025-02-28 12:30:28.150 [main] Log - element not interactable
+  (Session info: chrome=133.0.6943.127)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [52b2a18ed3742f6ef28c938579b33e91, sendKeysToElement {id=f.A2DBD634F588C437B42FDDB3868F7876.d.1C2946B0B02270A14C05D5A9113F856A.e.62, value=[Ljava.lang.CharSequence;@2ecdeec0}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.127, chrome: {chromedriverVersion: 133.0.6943.141 (2a5d6da0d61..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54597}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54597/devtoo..., se:cdpVersion: 133.0.6943.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (52b2a18ed3742f6ef28c938579b33e91)] -> xpath: (//div[@class='voice-call-dial-pad'])[2]/input[@class='voice-call-input ng-pristine ng-untouched ng-valid ng-empty']]
+Session ID: 52b2a18ed3742f6ef28c938579b33e91
+[INFO ] 2025-02-28 12:30:28.630 [main] Log - *** Test Suite TC_CTI_Outbound_Conference_Offline_Admin_CallLogs_CTI_Logs ending ***
+[INFO ] 2025-02-28 12:30:29.441 [main] Log - *** Running test method TC_CTI_Outbound_Conference_Custom_Status...
+[INFO ] 2025-02-28 12:31:00.206 [main] Log - Login successful !
+[INFO ] 2025-02-28 12:38:51.814 [main] Log - *** Test Suite TC_CTI_Outbound_Conference_Custom_Status ending ***
+[INFO ] 2025-02-28 12:38:51.816 [main] Log - *** Running test method TC_CTI_Outbound_Conference...
+[INFO ] 2025-02-28 12:39:22.799 [main] Log - Login successful !
